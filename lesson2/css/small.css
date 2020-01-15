@@ -1,0 +1,92 @@
+
+
+
+* { -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; box-sizing: border-box;
+    }
+    
+    /* body rules */
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    /* header rules here */ 
+    header {
+        padding: 1rem 2%;
+        background-color: blue;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        font-family: 'Gayathri', sans-serif;
+        border-radius: 25px;
+        margin: 10px;
+    }
+    header h1 {
+        margin: 0; 
+    }
+    header h3{
+        margin: 0; 
+    }
+    
+    /* main rules here */
+    main {
+        padding: 1rem 2%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 2rem;
+        font-family: 'Raleway', sans-serif;
+        
+    }
+    main h2 {
+        text-align: center;
+        background-color:blue;
+        font-size: 30px;
+        color:white;
+        padding: 10px;
+        padding-bottom: 0;
+        border-radius: 25px;
+        font-family: 'Gayathri', sans-serif;
+
+    }
+    .boxes {
+        border: 4px solid lightblue;
+        border-radius: 25px;
+        width: 100%;
+        margin: 20px 0px;
+        padding: 15px;
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+
+    
+    /* footer rules here*/
+    footer {
+        text-align: center;
+        padding: 1rem 2%;
+        background-color: blue;
+        margin: 10px auto;
+        border-radius: 25px;
+        font-family: 'Raleway', sans-serif;
+    }
+    .topline {
+        font-size: 15px;
+        color: white;
+    }
+    .toplinelink {
+        color: white;
+    }
+    .bottomline {
+        font-size: 14px;
+        color: yellow;
+    }
+    
+    
+    
+    
+    
+    

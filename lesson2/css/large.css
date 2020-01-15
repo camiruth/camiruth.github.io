@@ -1,0 +1,14 @@
+@media only screen and (min-width: 1028px) {
+    header, footer, main {
+        max-width: 1275px;
+        margin: auto;
+        margin-top: 10px;
+    }
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #bottombox {
+        grid-column: span 1;
+    }
+    
+}
