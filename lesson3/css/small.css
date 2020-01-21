@@ -1,0 +1,167 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    
+    
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #5A5560;
+}
+
+header img {
+    float: left;
+    margin-right: 10px;
+    width: 50px;
+}
+header h1 {margin: 0;
+        font-size: 1.3rem;
+        color: #FAED26;
+        font-family: 'Shadows Into Light', cursive;
+            
+}
+header h2 {margin: 0; 
+    font-weight: normal; 
+    font-size: 1rem;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #FAED26 ;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #46344e;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+}
+
+
+nav ul li a:hover {
+    background-color: #5a5560;
+    color:white;
+}
+nav ul li.active a {
+    background-color: #9b786F;
+    color:white;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+    text-align: center;
+}
+main h1 {
+    color: #FAED26;
+    font-family: 'Shadows Into Light', cursive;
+}
+main h2 {
+    color:#5a5560;
+    font-family: 'Bebas Neue', cursive;
+}
+main h3 {
+    color:#9b786F;
+    font-family: 'Dosis', sans-serif;
+
+}
+.box {
+    background-color: #5a5560;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+.navsample {
+    font-size: .9rem;
+    font-family: 'Dosis', sans-serif;
+    color: #46344e;
+    background-color: #FAED26;
+    padding: 4px;
+}
+.headerh1sample {
+    color: #FAED26;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20.8px;
+    background-color: #5a5560;
+    padding: 4px;
+}
+.headerh2sample {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    background-color: #5a5560;
+    font-size: 16px;
+    padding: 4px;
+}
+.footertoplinesample {
+    background-color: #5A5560;
+    font-family: 'Dosis', sans-serif;
+    font-size: 15px;
+    color: white;
+    padding: 4px;
+}
+.footerbottomlinesample {
+    background-color: #5A5560;
+    font-family: 'Dosis', sans-serif;
+    font-size: 14px;
+    color:#FAED26;
+    padding: 4px;
+}
+main p {
+    color: #5A5560;
+    font-family: 'Dosis', sans-serif;
+    
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    margin: 10px auto;
+    text-align: center;
+    padding: 13px;
+    background-color: #5A5560;
+    font-family: 'Dosis', sans-serif;
+        
+    }
+    .topline {
+        font-size: 15px;
+        color: white;
+    }
+    .toplinelink {
+        color: #FAED26;
+    }
+    .bottomline {
+        font-size: 14px;
+        color: #FAED26;
+    }
+
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
