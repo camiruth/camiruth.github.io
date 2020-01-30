@@ -87,7 +87,22 @@ nav ul.hide {
 main {
     padding: 0 2%;
     min-height: 10rem;
-    
+}
+img {
+    max-width: 100%;
+}
+#preston {
+    margin: auto;
+}
+
+.weathersummary {
+    background-color: #5a5560;
+    font-family: 'Dosis', sans-serif;
+    font-size: 12px;
+    color: white;
+    width: 25%;
+    padding: 0 2%;
+
 }
 main h1 {
     color: #FAED26;
@@ -146,6 +161,10 @@ main h3 {
 main p {
     color: #5A5560;
     font-family: 'Dosis', sans-serif;
+    
+}
+.prestonmap {
+    max-width: 100%;
     
 }
 
