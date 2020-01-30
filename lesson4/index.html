@@ -1,68 +1,71 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="description" content="Weather website that info about upcoming conditions. ">
-<meta name="author" content="Camilla Johanson">
+    <meta charset="utf-8">
+    <meta name="description" content="Weather website that info about upcoming conditions. ">
+    <meta name="author" content="Camilla Johanson">
 
 
-<title>My Sunny Daze</title>
+    <title>My Sunny Daze</title>
 
-<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
-<!-- STYLE SHEETS -->
-<link href="css/normalize.css" rel="stylesheet">
-<!-- phone-default -->
-<link href="css/small.css" rel="stylesheet">
-<!-- enhance-tablet -->
-<link href="css/medium.css" rel="stylesheet">
-<!-- enhance-desktop -->
-<link href="css/large.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
-     
+
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-<!-- HEADER HERE -->
-	<header class="clearfix">
-	<img src="images/sunnydazeicon.png" alt="logo">
- <h1>MY SUNNY DAZE</h1>
-        <h2>Never Miss a Sunny Day Again</h2>
+    <!-- HEADER HERE -->
+    <header class="clearfix">
+        <div class="headerlogo">
+            <img src="images/sunnydazeicon.png" alt="logo">
+            <h1>MY SUNNY DAZE</h1>
+            <h2>Never Miss a Sunny Day Again</h2>
+        </div>
     </header>
-    
-    
-<!-- NAVIGATION HERE -->
+
+
+    <!-- NAVIGATION HERE -->
     <nav class="clearfix">
         <button onclick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide">
-            <li class="active"><a href="index.html">Home</a></li> 
-            <li><a href="preston.html">Preston</a></li> 
-            <li><a href="#">Soda Springs</a></li> 
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
-            <li><a href="#">Storm Center</a></li>  
-            <li><a href="#">Gallery</a></li>    
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
         </ul>
     </nav>
-    
-    
-<!-- CONTENT HERE -->
-    <main>
-        <h1><span class="box">Site Name</span></h1>
-        <h3> My Sunny Daze </h3>
-        
-        <h1><span class="box">Site Domain Name</span></h1>
-        <h3> https://mysunnydaze.com</h3>
-        <p> Cost for domian name: $12/year</p>
 
+
+    <!-- CONTENT HERE -->
+    <main>
         <h1><span class="box">Site Purpose</span></h1>
-        <p>Weather. Sunny, Rain, Wind, Snow and everything in between. We let you know what to plan on and how to prepare. Our site is virtually about how to prepare for what the day ahead brings. It will let users know how to dress so they don't accidently forget a jacket.</p>
-        <p>Also, our slogan is "never miss a sunny day again" and the reason behind that, is our website will tell the client when its going to be a good day to play outside. Thus you can plan your week around the best days. </p>
-        <p>This is no ordinary weather site. It is all about creating the best day possible for our users. There will be a 7 day forcast that will show high and lows, wind speeds, precipitation, how to dress for the day, what it feels like outside, and how sunny it will be. </p>
+        <p>Weather. Sunny, Rain, Wind, Snow and everything in between. We let you know what to plan on and how to
+            prepare. Our site is virtually about how to prepare for what the day ahead brings. It will let users know
+            how to dress so they don't accidently forget a jacket.</p>
+        <p>Also, our slogan is "never miss a sunny day again" and the reason behind that, is our website will tell the
+            client when its going to be a good day to play outside. Thus you can plan your week around the best days.
+        </p>
+        <p>This is no ordinary weather site. It is all about creating the best day possible for our users. There will be
+            a 7 day forcast that will show high and lows, wind speeds, precipitation, how to dress for the day, what it
+            feels like outside, and how sunny it will be. </p>
         <p>Users will never question the weather again as they will know what is coming their way. </p>
 
         <h1><span class="box">Logo</span></h1>
@@ -72,16 +75,18 @@
         <img src="images/sitemap.jpg" alt="site map for my sunny daze">
 
     </main>
-    
-<!-- FOOTER HERE -->   
+
+    <!-- FOOTER HERE -->
     <footer>
-        <div class="topline"> Contact us: 555-555-5555 contactus@mysunnydaze.com | Map  
+        <div class="topline"> Contact us: 555-555-5555 contactus@mysunnydaze.com | Map
         </div>
         <div class="bottomline">
-            &copy; 2020 | Camilla R. Johanson |<a class="toplinelink" href="https://www.byui.edu/online"> Terms of Use </a> | <span id="currentyear"></span>
+            &copy; 2020 | Camilla R. Johanson |<a class="toplinelink" href="https://www.byui.edu/online"> Terms of Use
+            </a> | <span id="currentyear"></span>
         </div>
     </footer>
     <script src="js/sunnyScript.js"></script>
     <script src="js/nav.js"></script>
 </body>
+
 </html>
