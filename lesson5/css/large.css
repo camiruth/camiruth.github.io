@@ -2,7 +2,7 @@
 @media only screen and (min-width: 64rem) {
 
     main{
-        max-width: 50rem;
+        max-width: 64rem;
         margin: auto;
     }
     
@@ -13,7 +13,7 @@
 
 /*----------- HEADER --------------*/
     .headerlogo {
-        max-width: 50rem;
+        max-width: 64rem;
         margin: auto;
         padding: 0 2%;
     }
@@ -21,7 +21,7 @@
 
 /*----------- NAVIGATION --------------*/
     #primaryNav {
-        max-width: 50rem;
+        max-width: 64rem;
         margin: auto;
         padding: 0 2%;
     }
