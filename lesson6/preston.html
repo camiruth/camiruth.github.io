@@ -59,10 +59,15 @@
     <main class="clearfix">
         <h1><span class="box">Preston</span></h1>
         <div class="herodiv">
-            <figure class="prestonmainimg">
-                <img src="images/sizeimage.jpeg" alt="Preston Idaho Field" sizes="100vw" srcset="images/sizeimage500.jpg 500w, images/sizeimage800.jpg 800w, images/sizeimage1200.jpg 1200w">
-                <figcaption> Preston, ID </figcaption>
-            </figure>
+            <picture class="prestonmainimg">
+                <source media="(max-width: 500px)" srcset="images/sizeimage500.jpg">
+                <source media="(max-width: 800px)" srcset="images/sizeimage800.jpg">
+                <source media="(max-width: 1200px)" srcset="images/sizeimage1200.jpg">
+                <img src="images/sizeimage.jpeg" alt="Preston Idaho Field"> 
+                <div> Preston, ID </div>
+            </picture>
+
+            
             <section class="weathersummary">
                 <h2>Weather Summary</h2>
                 <p>Current Temp: <span id="temp">30</span>&deg;</p> 
