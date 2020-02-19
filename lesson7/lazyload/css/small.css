@@ -6,3 +6,13 @@ main {
     align-items: center;
     row-gap: 10px;
 }
+.blur {
+    animation: myblur 1s linear;
+  }
+
+@keyframes myblur {
+    from {filter: blur(10px);}
+    to {filter: blur(0px);}
+}
+
+  

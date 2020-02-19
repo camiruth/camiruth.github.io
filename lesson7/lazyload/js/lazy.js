@@ -6,10 +6,12 @@ function preloadImage(img) {
         return;
     }
     img.src = src;
+    img.className = "blur";
+    console.log(img);
 }
 const imgOptions = {
     threshold: 0,
-    rootMargin: "0px 0px 300px 0px"
+    rootMargin: "0px 0px 100px 0px"
 };
 const imgObserver = new IntersectionObserver(( entries, imgObserver) => {
     entries.forEach(entry => {
