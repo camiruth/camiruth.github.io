@@ -127,6 +127,25 @@ nav ul.hide {
 
 
 /*----------- MAIN --------------*/
+.picturegrid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+.caption {
+    font-size: .7rem;
+    text-align: center;
+    background-color:#5a5560 ;
+    padding: 8px;
+    color: #FAED26;
+}
+.galleryimg {
+    text-align: center;
+    vertical-align: top;
+}
+
+
 main {
     padding: 0 2%;
     min-height: 10rem;
