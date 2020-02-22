@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Praticing Building Tables ">
+    <meta name="author" content="Camilla Johanson">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <title>Table Building Site</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Table Building Practice</h1>
+    </header>
+    <main class="clearfix">
+
+        <table style="width:35%">
+            <thead>
+                <tr>
+                    <th colspan="3">ACME Wildwest</th>
+                </tr>
+                <tr>
+                    <th>Period</th>
+                    <th>Sales</th>
+                    <th>Sales Goal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>August</td>
+                    <td>$3,590</td>
+                    <td>$4,000</td>
+                </tr>
+                <tr>
+                    <td>September</td>
+                    <td>$4,420</td>
+                    <td>$5,000</td>
+                </tr>
+                <tr>
+                    <td>October</td>
+                    <td>$4,870</td>
+                    <td>$5,000</td>
+                </tr>
+                <tr>
+                    <td>November</td>
+                    <td>$8,610</td>
+                    <td class="special">$7,500</td>
+                </tr>
+                <tr>
+                    <td>Black Friday</td>
+                    <td colspan="2">$3,200</td>
+                </tr>
+                <tr>
+                    <td>December</td>
+                    <td>$6,820</td>
+                    <td>$7,500</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Complied <span id="currentyear"></span> by Cami Johanson</td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </main>
+    <script src="js/currentyear.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Ubuntu"]
+            }
+        });
+    </script>
+</body>
+
+</html>
