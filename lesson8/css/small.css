@@ -327,7 +327,7 @@ form label.top input, form label.top select {
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
-    border: solid 1 px #5A5560;
+    border: solid 1px #5A5560;
     border-radius: 4px;
     padding: .75rem;
     color: #5A5560;
