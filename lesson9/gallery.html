@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Weather website that info about upcoming conditions. ">
+    <meta name="author" content="Camilla Johanson">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <title>My Sunny Daze</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header class="clearfix">
+        <div class="headerlogo">
+            <img src="images/sunnydazeicon.png" alt="logo">
+            <h1>MY SUNNY DAZE</h1>
+            <h2>Never Miss a Sunny Day Again</h2>
+        </div>
+    </header>
+
+
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li class="active"><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- CONTENT HERE -->
+    <main class="clearfix">
+        <h1><span class="box">Weather Gallery</span></h1>
+        <div class="picturegrid">
+            <picture class="boxshadow">
+                <img class="galleryimg" src="https://via.placeholder.com/400x300.png?text=placeholder"
+                    data-src="images/pic1.jpg" alt="clouds at sunset">
+                <div class="caption">Clouds at Sunset</div>
+            </picture>
+            <picture class="boxshadow">
+                <img class="galleryimg" src="https://via.placeholder.com/400x300.png?text=placeholder"
+                    data-src="images/pic2.jpg" alt="tornado">
+                <div class="caption">Tornado</div>
+            </picture>
+            <picture class="boxshadow">
+                <img class="galleryimg" src="https://via.placeholder.com/400x300.png?text=placeholder"
+                    data-src="images/pic3.jpg" alt="dark rain clouds">
+                <div class="caption">Dark rain clouds</div>
+            </picture>
+            <picture class="boxshadow">
+                <img class="galleryimg" src="https://via.placeholder.com/400x300.png?text=placeholder"
+                    data-src="images/pic4.jpg" alt="sun at dawn">
+                <div class="caption">Sun at Dawn</div>
+            </picture>
+            <picture class="boxshadow">
+                <img class="galleryimg" src="https://via.placeholder.com/400x300.png?text=placeholder"
+                    data-src="images/pic5.jpg" alt="sun coming through the clouds">
+                <div class="caption">Sun coming through the clouds</div>
+            </picture>
+            <picture class="boxshadow">
+                <img class="galleryimg" src="https://via.placeholder.com/400x300.png?text=placeholder"
+                    data-src="images/pic6.jpg" alt="rain falling in a puddle">
+                <div class="caption">Rain falling in a puddle</div>
+            </picture>
+            <picture class="boxshadow">
+                <img class="galleryimg" src="https://via.placeholder.com/400x300.png?text=placeholder"
+                    data-src="images/pic7.jpg" alt="sunset in the trees">
+                <div class="caption">Sunset in the tress</div>
+            </picture>
+            <picture class="boxshadow">
+                <img class="galleryimg" src="https://via.placeholder.com/400x300.png?text=placeholder"
+                    data-src="images/pic8.jpg" alt="paraglider in the snow">
+                <div class="caption">Paraglider in the snow</div>
+            </picture>
+            <picture class="boxshadow">
+                <img class="galleryimg" src="https://via.placeholder.com/400x300.png?text=placeholder"
+                    data-src="images/pic9.png" alt="Lightning in the sky">
+                <div class="caption">Lightning in the sky</div>
+            </picture>
+        </div>
+    </main>
+
+    <!-- FOOTER HERE -->
+    <footer>
+        <div class="topline"> Contact us: 555-555-5555 | contactus@mysunnydaze.com | Map
+        </div>
+        <div class="bottomline">
+            &copy; 2020 | Camilla R. Johanson |<a class="toplinelink" href="https://www.byui.edu/online"> Terms of Use
+            </a> | <span id="currentyear"></span>
+        </div>
+    </footer>
+    <script src="js/currentyear.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Bebas Neue", "Dosis", "Shadows Into Light"]
+            }
+        });
+    </script>
+</body>
+
+</html>
