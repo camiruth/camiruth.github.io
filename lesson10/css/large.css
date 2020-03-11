@@ -1,0 +1,55 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64rem) {
+
+    main {
+        max-width: 64rem;
+        margin: auto;
+    }
+
+
+    /*----------- BODY --------------*/
+
+
+
+    /*----------- HEADER --------------*/
+    .headerlogo {
+        max-width: 64rem;
+        margin: auto;
+        padding: 0 2%;
+    }
+
+
+    /*----------- NAVIGATION --------------*/
+    #primaryNav {
+        max-width: 64rem;
+        margin: auto;
+        padding: 0 2%;
+    }
+
+    /*----------- MAIN --------------*/
+    .weathersummary {
+        font-size: 20px;
+    }
+
+    .picturegrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    .boxshadow:hover {
+        box-shadow: 0 0 50px #333;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        text-align: center;
+    }
+    section {
+        display:block;
+    }
+    /*----------- FOOTER --------------*/
+
+}
+
+/* end of media query */
