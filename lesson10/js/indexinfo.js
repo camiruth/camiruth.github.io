@@ -9,46 +9,46 @@ fetch(requestURL)
         const towndata = jsonObject['towns'];
         console.log(towndata);
 
-        let displaytowns = [towndata[4], towndata[5], towndata[1]];
-        console.log(displaytowns);
+        //let displaytowns = [towndata[4], towndata[5], towndata[1]];
+        //console.log(displaytowns);
 
 
-        for (let i = 0; i < displaytowns.length; i++) {
-            let card = document.createElement('section');
-            let link = displaytowns[i].name.replace(/\s/g, '') + '.html'
-            card.onclick = function() { window.open(link); };
-            card.classList.add('hover');
-            let div = document.createElement('div');
-            if (i ==1) {
-                div.classList.add("specialFloat");
+        for (let i = 0; i < towndata.length; i++) {
+            if (towndata[i].name == "Fish Haven" || towndata[i].name == "Preston" || towndata[i].name == "Soda Springs") {
+                let card = document.createElement('section');
+                //let link = towndata[i].name.replace(/\s/g, '') + '.html'
+                card.classList.add('hover');
+                let div = document.createElement('div');
+
+                let h2 = document.createElement('h2');
+                let h3 = document.createElement('h3');
+                let p1 = document.createElement('p');
+                let p2 = document.createElement('p');
+                let p3 = document.createElement('p');
+                let img = document.createElement('img');
+
+                h2.textContent = towndata[i].name;
+                h3.textContent = towndata[i].motto;
+                p1.textContent = "Year Founded: " + towndata[i].yearFounded;
+                p2.textContent = "Population: " + towndata[i].currentPopulation;
+                p3.textContent = "Annual Rain Fall: " + towndata[i].averageRainfall;
+                img.setAttribute('src', 'images/' + towndata[i].photo);
+                img.setAttribute('alt', towndata[i].name);
+
+                div.appendChild(h2);
+                div.appendChild(h3);
+                div.appendChild(p1);
+                div.appendChild(p2);
+                div.appendChild(p3);
+
+                card.appendChild(div);
+                card.appendChild(img);
+
+                document.querySelector('div.cards').appendChild(card);
             }
-            let h2 = document.createElement('h2');
-            let h3 = document.createElement('h3');
-            let p1 = document.createElement('p');
-            let p2 = document.createElement('p');
-            let p3 = document.createElement('p');
-            let img = document.createElement('img');
+            //if (i == 1) {
+              //  div.classList.add("specialFloat");
+            //}
 
-            h2.textContent = displaytowns[i].name;
-            h3.textContent = displaytowns[i].motto;
-            p1.textContent = "Year Founded: " + displaytowns[i].yearFounded;
-            p2.textContent = "Population: " + displaytowns[i].currentPopulation;
-            p3.textContent = "Annual Rain Fall: " + displaytowns[i].averageRainfall;
-            img.setAttribute('src', 'images/' + displaytowns[i].photo);
-            img.setAttribute('alt', displaytowns[i].name);
-
-            div.appendChild(h2);
-            div.appendChild(h3);
-            div.appendChild(p1);
-            div.appendChild(p2);
-            div.appendChild(p3);
-
-            card.appendChild(div);
-            card.appendChild(img);
-
-
-
-
-            document.querySelector('div.cards').appendChild(card);
         }
     });
