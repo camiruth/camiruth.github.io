@@ -48,6 +48,9 @@
     section {
         display:block;
     }
+    div.cards section {
+        display: block;
+    }  
     /*----------- FOOTER --------------*/
 
 }
