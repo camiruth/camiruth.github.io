@@ -1,0 +1,182 @@
+/* 35em is also 560px (if basefont is 16px) */
+@media only screen and (min-width: 35rem) {
+
+
+    /*----------- BODY --------------*/
+
+
+
+    /*----------- HEADER --------------*/
+    header {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    header img {
+        width: auto;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1.5rem;
+    }
+
+
+    /*----------- NAVIGATION --------------*/
+    nav {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+    }
+
+    nav ul {
+        margin-left: 2%;
+
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: .6rem 1rem;
+    }
+
+    /*----------- MAIN --------------*/
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #fivedayforecast{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin: 15px 0px 15px 0px;
+        padding: 20px;
+        background: none;
+    }
+    #fivedayforecast div{
+        border: 2px solid #5a5560;
+        margin: 0px 5px 0px 5px;
+        padding: 20px;
+        background: radial-gradient(#eee, #FAED26);
+    }
+    #fivedayforecast p {
+        font-weight: bold;
+        font-size: 20px;
+    }
+    #fivedayforecasth1 {
+        display: block;
+    }
+    div.cards section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    div.cards :nth-child(2) :nth-child(1) {
+        grid-area: 1 / 2;
+    }    
+    .picturegrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+
+    }
+    .weathersummary {
+        font-size: 16px;
+        grid-template-columns: 1fr;
+    }
+
+    .fivedayforecast {
+        display: block;
+        text-align: center;
+    }
+    .flex {
+        display: flex;
+        flex-direction: row;
+        margin: 0 7rem 3rem 7rem;
+    }
+    .col {
+        flex: 1 1 100%;
+        border-top: 1px solid #333;
+        border-bottom: 1px solid #333;
+        border-left: 1px solid #333;
+        background: radial-gradient(#eee, #5a5560);
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        font-family: 'Dosis', sans-serif;
+    }
+    .flex div:last-child {
+        border-right: 1px solid #333;
+    }
+    .label {
+        display: block;
+        padding: 5px;
+        font-weight: 700;
+        font-size: 15px;
+        border-bottom: 1px solid #333;
+        background-color: #5a5560;
+    }
+    
+    .flex div img, table img {
+        border-radius: 100px;
+        padding: 5px;
+    }
+    
+    .data {
+        display: block;
+        padding: 0 5px 5px;
+    }
+    
+
+    .article h2,
+    .article p {
+        padding: 0 1rem 0 1rem;
+    }
+
+    .article img {
+        float: right;
+        height: 13rem;
+        margin: 0 1em 0 1em;
+    }
+
+    .prestonmap {
+        display: block;
+        float: right;
+        width: 33%;
+        height: 12rem;
+        padding-right: 1rem;
+    }
+
+    .contactus {
+        display: flex;
+        margin: 0em;
+    }
+
+    .address {
+        width: 33%;
+    }
+
+    .phone {
+        width: 33%;
+    }
+
+    /*----------- FOOTER --------------*/
+    footer {
+        border-radius: 10px;
+    }
+}
+
+/*  end of media query  */
