@@ -50,7 +50,10 @@
     }
     div.cards section {
         display: block;
-    }  
+    } 
+    section.preston {
+        margin: 0 12rem 0 12rem;
+    } 
     /*----------- FOOTER --------------*/
 
 }

@@ -56,10 +56,11 @@
     }
 
     /*----------- MAIN --------------*/
-    section {
+    section.hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    
     #fivedayforecast{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -149,7 +150,8 @@
     .article img {
         float: right;
         height: 13rem;
-        margin: 0 1em 0 1em;
+        margin: 0 1em 1em 1em;
+
     }
 
     .prestonmap {
@@ -172,7 +174,9 @@
     .phone {
         width: 33%;
     }
-
+    section.preston {
+        margin: 0 7rem 0 7rem;
+    }
     /*----------- FOOTER --------------*/
     footer {
         border-radius: 10px;

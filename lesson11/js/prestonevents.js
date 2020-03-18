@@ -12,6 +12,7 @@ fetch(prestonURL)
         for (let i = 0; i < towndata.length; i++) {
             if (towndata[i].name == "Preston") {
                 let card = document.createElement('section');
+                card.classList.add('preston');
                 let div = document.createElement('div');
                 let h2 = document.createElement('h2');
                 h2.textContent = "Events";
