@@ -12,6 +12,7 @@ fetch(sodaURL)
         for (let i = 0; i < towndata.length; i++) {
             if (towndata[i].name == "Soda Springs") {
                 let card = document.createElement('section');
+                card.classList.add('soda');
                 let div = document.createElement('div');
                 let h2 = document.createElement('h2');
                 h2.textContent = "Events";

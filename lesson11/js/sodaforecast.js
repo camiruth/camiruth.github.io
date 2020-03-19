@@ -43,6 +43,8 @@ fetch(forecastURL)
                 let iconPath = "//openweathermap.org/img/w/" + iconcode + ".png";
                 let theIcon = document.createElement("img");
                 theIcon.src = iconPath;
+                theIcon.setAttribute('src', iconPath);
+                theIcon.setAttribute('alt', weatherInfo.city.name );
 
                 let theDay = document.createElement("div");
                 theDay.appendChild(theDayName);

@@ -399,6 +399,20 @@ section.preston {
     border: #5a5560 solid 2px;
     background: radial-gradient(#FAED26, #eee);
 }
+section.soda {
+    justify-content: center;
+    text-align: center;
+    margin: 0 3rem 0 3rem;
+    border: #5a5560 solid 2px;
+    background: radial-gradient(#FAED26, #eee);
+}
+section.fishhaven {
+    justify-content: center;
+    text-align: center;
+    margin: 0 3rem 0 3rem;
+    border: #5a5560 solid 2px;
+    background: radial-gradient(#FAED26, #eee);
+}
 
 /*----------- FOOTER --------------*/
 footer {

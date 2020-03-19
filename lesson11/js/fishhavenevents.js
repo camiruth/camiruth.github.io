@@ -12,6 +12,7 @@ fetch(fishhavenURL)
         for (let i = 0; i < towndata.length; i++) {
             if (towndata[i].name == "Fish Haven") {
                 let card = document.createElement('section');
+                card.classList.add('fishhaven');
                 let div = document.createElement('div');
                 let h2 = document.createElement('h2');
                 h2.textContent = "Events";
