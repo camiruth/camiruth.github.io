@@ -1,0 +1,85 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header {
+    padding: .5rem 2%;
+    background-color: #5A5560;
+
+    img {
+        float: left;
+        margin-right: 10px;
+        width: 50px;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 1.3rem;
+        color: #FAED26;
+        font-family: $fontFamily;
+        font-weight: $heavyWeight;
+
+    }
+
+    h2 {
+        margin: 0;
+        font-weight: normal;
+        font-size: 1rem;
+        color: white;
+        font-family: 'Bebas Neue', cursive;
+
+    }
+}
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #FAED26;
+    font-family: 'Dosis', sans-serif;
+    button {
+        margin: .2rem 2%;
+        background-color: transparent;
+        border: none;
+        font-size: 1.6rem;
+        color: #fff;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    ul li a {
+        display: block;
+        color: #46344e;
+        padding: .8rem 2%;
+        text-decoration: none;
+        font-size: .9rem;
+        text-align: center;
+        border-top: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    
+    ul li a:hover {
+        background-color: #5a5560;
+        color: white;
+    }
+    
+    ul li.active a {
+        background-color: #9b786F;
+        color: white;
+    }
+    
+    ul.hide {
+        display: none;
+    }
+}
+
+
+

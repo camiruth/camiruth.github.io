@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="White river rafting in Riggins, ID. ">
+    <meta name="author" content="Camilla Johanson">
+    <link rel="shortcut icon" href="images/rafticon.png">
+
+    <title>Salmon River Adventures</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+    <!-- STYLE SHEETS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header class="clearfix">
+        <div class="headerlogo">
+            <img src="images/rafticon.png" alt="logo">
+            <h1>Salmon River Adventures</h1>
+            <h2>Never let Adventure Cease</h2>
+        </div>
+    </header>
+
+
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="shortrafting.html">Short Rafting</a></li>
+            <li><a href="alldayrafting.html">All Day Rafting</a></li>
+            <li><a href="raftandhike.html">Raft & Hike</a></li>
+            <li><a href="riverguide.html">River Guides</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- CONTENT HERE -->
+    <main>
+        <section class="homeimages">
+            <div>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/raftone500.jpg">
+                    <source media="(max-width: 800px)" srcset="images/raftone800.jpg">
+                    <source media="(max-width: 1200px)" srcset="images/raftone1200.jpg">
+                    <img src="images/raftone1200.jpg" alt="Preston Idaho Field"> 
+                    <div> Caption </div>
+                </picture>
+            </div>
+            <div>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/rafttwo500.jpg">
+                    <source media="(max-width: 800px)" srcset="images/rafttwo800.jpg">
+                    <source media="(max-width: 1200px)" srcset="images/rafttwo1200.jpg">
+                    <img src="images/rafttwo1200.jpg" alt="Preston Idaho Field"> 
+                    <div> Caption </div>
+                </picture>
+            </div>
+            <div>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/raftthree500.jpg">
+                    <source media="(max-width: 800px)" srcset="images/raftthree800.jpg">
+                    <source media="(max-width: 1200px)" srcset="images/raftthree1200.jpg">
+                    <img src="images/raftthree1200.jpg" alt="Preston Idaho Field"> 
+                    <div> Caption </div>
+                </picture>
+            </div>
+            <div>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/raftfour500.jpg">
+                    <source media="(max-width: 800px)" srcset="images/raftfour800.jpg">
+                    <source media="(max-width: 1200px)" srcset="images/raftfour1200.jpg">
+                    <img src="images/raftfour1200.jpg" alt="Preston Idaho Field"> 
+                    <div> Caption </div>
+                </picture>
+            </div>
+            <div>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/raftfive500.jpg">
+                    <source media="(max-width: 800px)" srcset="images/raftfive800.jpg">
+                    <source media="(max-width: 1200px)" srcset="images/raftfive1200.jpg">
+                    <img src="images/raftfive1200.jpg" alt="Preston Idaho Field"> 
+                    <div> Caption </div>
+                </picture>
+            </div>
+
+        </section>
+
+        <div class="weathersummary">
+            <h2>Riggin's Current Weather</h2>
+            <p>Current Temp: <span id="temp"></span>&deg;</p> 
+            <p>High: <span id="high"></span>&deg;</p> 
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>Wind Speed: <span id="speed"></span>mph</p>
+            <p><span id="chill"></span></p>
+        </div>
+
+        <h2>Contact Us</h2>
+        <div class="contactus">
+            <div class="address">
+                <h3>Address:</h3>
+                <p>Salmon River Adventures</p>
+                <p>987 Center Street</p>
+                <p>Riggins, ID 83549</p>
+            </div>
+            <div class="phone">
+                <h3>Phone:</h3>
+                <p>(555) 555-5555</p>
+                <h3>Email:</h3>
+                <p>contactus@salmonriveradventures.com</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER HERE -->
+    <footer>
+        <div class="topline"> Contact us: 555-555-5555 | contactus@salmonriveradventures.com | Map
+        </div>
+        <div class="bottomline">
+            &copy; 2020 | Camilla R. Johanson |<a class="toplinelink" href="https://www.byui.edu/online"> Terms of Use
+            </a> | <span id="currentyear"></span>
+        </div>
+    </footer>
+    <script src="js/nav.js"></script>
+    <script src="js/indexinfo.js"></script>
+</body>
+
+</html>
