@@ -1,10 +1,10 @@
-@media only screen and (min-width: 1028px) {
+
     header, footer, nav, main {
         max-width: 75rem;
         margin: auto;
     }
     nav ul {
-        padding-left: 1%;
+        padding-left: 1 $gutter;
     }
     nav li {
         width: auto;
@@ -20,4 +20,3 @@
     div.news {
         column-count: 3;
     }
-}

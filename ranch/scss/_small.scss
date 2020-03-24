@@ -1,0 +1,110 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* body rules */
+body {
+    font-family: $fontFamily;
+    font-weight: $regularWeight;
+    font-size: 16px;
+}
+
+/* header rules here */
+header {
+    background-color: $primaryColor;
+    padding: 1rem $gutter;
+
+    h1 {
+        margin: 0;
+        font-weight: $heavyWeight;
+    }
+
+    //end of h1
+    h2 {
+        margin: 0;
+        font-weight: $regularWeight;
+    }
+
+    //end of h2
+
+}
+
+//end of header
+
+/* navigation rules here */
+nav {
+    background-color: #111;
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    li.active {
+        background-color: #333;
+    }
+
+    a {
+        display: block;
+        padding: .8rem 0;
+        color: #eee;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: #444;
+    }
+}
+
+//end of nav
+
+
+/* main rules here */
+main {
+    padding: 1rem $gutter;
+    display: block;
+
+    h1 {
+        color: $primaryColor;
+        font-weight: $heavyWeight;
+    }
+
+    figure {
+        width: 100%;
+        margin: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    figcaption {
+        text-align: center;
+        font-size: .8rem;
+    }
+}
+
+//end of main
+
+footer {
+    text-align: center;
+    padding: 1rem $gutter;
+    background-color: $primaryColor;
+}
+
+
+
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
