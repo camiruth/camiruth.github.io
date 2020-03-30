@@ -10,21 +10,51 @@ html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+h2{
+    margin: 0;
+    font-size: 2rem;
+    color: $secondColor;
+    font-family: $fontFamily;
+    font-weight: $regularWeight;
+    //background-image: linear-gradient(to right, $primaryColor, $fourthColor);
+    //padding: 5px;
+}
+h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: $primaryColor;
+    font-family: $fontFamily;
+    font-weight: $regularWeight;
+}
+p{
+    margin: 0;
+    font-size: 1rem;
+    color: $fourthColor;
+    font-family: $fontFamily;
+    font-weight: $regularWeight;
+}
+.box {
+    //background: radial-gradient($fourthColor, $primaryColor);
+    padding: 5px;
+    margin: 1.5rem;
+    border-radius: 10px;
+
+}
 
 header {
     padding: .5rem 2%;
-    background-color: #5A5560;
+    background-color: $fourthColor;
 
     img {
         float: left;
         margin-right: 10px;
-        width: 50px;
+        width: 65px;
     }
 
     h1 {
         margin: 0;
-        font-size: 1.3rem;
-        color: #FAED26;
+        font-size: 1.8rem;
+        color: $primaryColor;
         font-family: $fontFamily;
         font-weight: $heavyWeight;
 
@@ -33,22 +63,26 @@ header {
     h2 {
         margin: 0;
         font-weight: normal;
-        font-size: 1rem;
-        color: white;
-        font-family: 'Bebas Neue', cursive;
+        font-size: 1.4rem;
+        color: $secondColor;
+        font-family: $fontFamily;
+        font-weight: $regularWeight;
+
 
     }
 }
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color: #FAED26;
-    font-family: 'Dosis', sans-serif;
+    background-color: $secondColor;
+    font-family: $fontFamily;
+    font-weight: $regularWeight;
+    
     button {
         margin: .2rem 2%;
         background-color: transparent;
         border: none;
         font-size: 1.6rem;
-        color: #fff;
+        color: $fourthColor;
     }
     ul {
         list-style-type: none;
@@ -58,28 +92,111 @@ nav {
     
     ul li a {
         display: block;
-        color: #46344e;
+        color: $fourthColor;
         padding: .8rem 2%;
         text-decoration: none;
-        font-size: .9rem;
+        font-size: .8rem;
         text-align: center;
         border-top: 1px solid rgba(0, 0, 0, 0.3);
     }
     
     ul li a:hover {
-        background-color: #5a5560;
-        color: white;
+        background-color: $thirdColor;
+        color:$primaryColor;
     }
     
     ul li.active a {
-        background-color: #9b786F;
-        color: white;
+        background-color: $thirdColor;
+        color:$primaryColor;
     }
     
     ul.hide {
         display: none;
     }
 }
+img {
+    max-width:100%;
+}
+/*----------- Footer --------------*/
+footer {
+    margin: 10px auto;
+    text-align: center;
+    padding: 13px;
+    background-color: $secondColor;
+    font-family: $fontFamily;
 
+}
 
+.topline {
+    font-size: 15px;
+    color:$fourthColor;
+}
 
+.toplinelink {
+    color: $primaryColor;
+}
+
+.bottomline {
+    font-size: 14px;
+    color:$primaryColor;
+}
+/*----------- Home Page --------------*/
+.homeimages {
+    display: grid;
+    grid-gap:10px;
+    padding: 2rem;
+}
+.quote {
+    padding: 20px;
+}
+.infoquote{
+    padding: 10px;
+}
+.weathersummary {
+    background-color: $secondColor;
+    text-align: center;
+    margin: 1rem;
+    border: 5px solid $thirdColor;
+    padding: 20px;
+}
+.contactus {
+    text-align: center;
+    font-family: $fontFamily;
+    font-weight: $regularWeight;
+    
+}
+.address {
+    background-color: $secondColor;
+    justify-content: center;
+    margin: 2rem;
+    border: 5px solid $thirdColor;
+    padding: 10px;
+}
+.phone {
+    background-color: $secondColor;
+    justify-content: center;
+    margin: 2rem;
+    border: 5px solid $thirdColor;
+    padding: 10px;
+}
+/*----------- Short Rafting --------------*/
+
+.information {
+    background-color: $secondColor;
+    border: 5px solid $thirdColor;
+    padding: 20px;
+    margin: 1rem 0 1rem 0;
+}
+.raftingpages {
+    display: grid;
+    margin: .5rem;
+    :nth-child(2){
+        grid-area: 1 / 1;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

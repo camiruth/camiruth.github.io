@@ -1,0 +1,103 @@
+/*----------- Header --------------*/
+header {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    img {
+        width: 4rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+/*----------- Navigation --------------*/
+nav {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    ul {
+        margin-left: 2%;
+    
+    }
+    
+    button {
+        display: none;
+    }
+    ul li {
+        float: left;
+        background-color: $secondColor;
+        display: grid;
+    }
+    
+    ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: .6rem 1rem;
+        font-size: .6rem;
+    }
+    ul.hide {
+        display: block;
+        
+    }
+}
+/*----------- Footer --------------*/
+footer {
+    border-radius: 10px;
+}
+
+/*----------- Home Page --------------*/
+
+.homeimages {
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+    padding: 2rem 0 2rem 0;
+    grid-gap:20px;
+}
+.homeimages :nth-child(3){
+    grid-column: 1 / span 2;
+}
+.homeimages :nth-child(6){
+    grid-column: 1 / span 2;
+}
+.homeimages :nth-child(8){
+    padding: 15px 0px 15px 0px;
+}
+.quote {
+    padding: 0px 10px 10px 10px;
+}
+.infoquote {
+    text-align: center;
+    padding: 20px;
+}
+.weathersummary {
+    margin: 0px;
+    padding: 20px;
+}
+.weatherh3text {
+    font-size: 1.8rem;
+}
+.weathertext {
+    font-size: 1.3rem;
+}
+.contactus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.address {
+    margin: 1rem;
+}
+.phone {
+    margin: 1rem;
+}
+/*----------- Short Rafting --------------*/
+.raftingpages {
+    display: grid;
+    :nth-child(2){
+        grid-area: 1 / 1;
+    }
+}
+

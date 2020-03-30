@@ -1,0 +1,45 @@
+{
+    "guides": [
+      {
+        "name": "Johnny Bob",
+        "photo": "johnny.jpg",
+        "certLevel": 8,
+        "yearsExp": 7,
+        "emailAddress": "johnnybob@salmonriveradventure.com",
+        "biography": [
+          "Johnny was born in Preston, ID and grew up loving to raft."
+        ]
+      },
+      {
+        "name": "David Short",
+        "photo": "david.jpg",
+        "certLevel": 5,
+        "yearExp": 3,
+        "emailAddress": "davidshort@salmonriveradventure.com",
+        "biography": [
+          "David is a fish at heart."
+        ]
+      },
+      {
+        "name": "Franklin Small",
+        "photo": "franklin.jpg",
+        "certLevel": 10,
+        "yearExp": 25,
+        "emailAddress": "franklinsmall@salmonriveradventure.com",
+        "biography": [
+          "Franklin is an expert in the rafting industry. He is the owner and founder of Salmon River Adventures.", 
+          "He has a love for the outdoors and loves to share his love with others."
+        ]
+      },
+      {
+        "name": "Katrina Abble",
+        "photo": "katrina.jpg",
+        "certLevel": 5,
+        "yearExp": 3,
+        "emailAddress": "katrinaabble@salmonriveradventure.com",
+        "biography": [
+          "Katrina is a outdoor buff. She has multiple certifications in white water rafting and excited to share her passion with others."
+        ]
+      }
+    ]
+  }

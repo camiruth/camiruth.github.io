@@ -1,0 +1,50 @@
+.headerlogo {
+    max-width: 64rem;
+    margin: auto;
+    padding: 0 2%;
+}
+#primaryNav {
+    max-width: 64rem;
+    margin: auto;
+    padding: 0 2%;
+}
+nav ul li a {
+    font-size: .8rem;
+}
+main {
+    max-width: 64rem;
+    margin: auto;
+}
+/*----------- Home Page --------------*/
+.homeimages {
+    text-align: center;
+    justify-content: center;
+}
+.weatherh3text {
+    font-size: 2.6rem;
+}
+.weathertext {
+    font-size: 1.7rem;
+}
+.quote {
+    padding: 30px 40px 40px 40px;
+}
+.infoquote{
+    padding: 80px 60px 40px 40px;
+}
+/*----------- Short Rafting --------------*/
+.raftingpages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem;
+    grid-gap: 1rem;
+    :nth-child(7){
+        grid-area: 7 / span 2;
+    }
+    :nth-child(2){
+        grid-area: 1 / 2;
+    }
+}
+.information {
+    margin: 0;
+}
