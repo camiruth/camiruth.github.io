@@ -7,14 +7,16 @@
         "yearsExp": 7,
         "emailAddress": "johnnybob@salmonriveradventure.com",
         "biography": [
-          "Johnny was born in Preston, ID and grew up loving to raft."
+          "Johnny was born in Preston, ID and grew up loving to raft with his father. He spent many hours rafting rivers in Idaho and now has been trained and certified to help other people enjoy his passion.",
+          "Most of his experience as a rafting instructor was spent on the Colorado River with tours in the Grand Canyon. Two years ago, he decided to move home to spend time with family and come back to Idaho.",
+          "We are glad to have Johnny on our team and use his expertise and knowledge to show you the beauties of the Salmon River. "
         ]
       },
       {
         "name": "David Short",
         "photo": "david.jpg",
-        "certLevel": 5,
-        "yearExp": 3,
+        "certLevel":5,
+        "yearsExp": 3,
         "emailAddress": "davidshort@salmonriveradventure.com",
         "biography": [
           "David is a fish at heart."
@@ -24,7 +26,7 @@
         "name": "Franklin Small",
         "photo": "franklin.jpg",
         "certLevel": 10,
-        "yearExp": 25,
+        "yearsExp": 25,
         "emailAddress": "franklinsmall@salmonriveradventure.com",
         "biography": [
           "Franklin is an expert in the rafting industry. He is the owner and founder of Salmon River Adventures.", 
@@ -35,7 +37,7 @@
         "name": "Katrina Abble",
         "photo": "katrina.jpg",
         "certLevel": 5,
-        "yearExp": 3,
+        "yearsExp": 3,
         "emailAddress": "katrinaabble@salmonriveradventure.com",
         "biography": [
           "Katrina is a outdoor buff. She has multiple certifications in white water rafting and excited to share her passion with others."

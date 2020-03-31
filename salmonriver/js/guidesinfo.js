@@ -1,4 +1,4 @@
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+const requestURL = 'https://camiruth.github.io/JSON/guides.json';
 
 fetch(requestURL)
     .then(function (response) {
@@ -6,15 +6,13 @@ fetch(requestURL)
     })
     .then(function (jsonObject) {
         console.table(jsonObject); // temporary checking for valid response and data parsing
-        const towndata = jsonObject['towns'];
-        console.log(towndata);
+        const guides = jsonObject['guides'];
+        console.log(guides);
 
 
 
-        for (let i = 0; i < towndata.length; i++) {
-            if (towndata[i].name == "Fish Haven" || towndata[i].name == "Preston" || towndata[i].name == "Soda Springs") {
+        for (let i = 0; i < guides.length; i++) {
                 let card = document.createElement('section');
-                //let link = towndata[i].name.replace(/\s/g, '') + '.html'
                 card.classList.add('hover');
                 let div = document.createElement('div');
 
@@ -26,13 +24,13 @@ fetch(requestURL)
                 let img = document.createElement('img');
 
 
-                h2.textContent = towndata[i].name;
-                h3.textContent = towndata[i].motto;
-                p1.textContent = "Year Founded: " + towndata[i].yearFounded;
-                p2.textContent = "Population: " + towndata[i].currentPopulation;
-                p3.textContent = "Annual Rain Fall: " + towndata[i].averageRainfall;
-                img.setAttribute('src', 'images/' + towndata[i].photo);
-                img.setAttribute('alt', towndata[i].name);
+                h2.textContent = guides[i].name;
+                h3.textContent = guides[i].biography;
+                p1.textContent = "Certification Level: " + guides[i].certLevel;
+                p2.textContent = "Years Experience: " + guides[i].yearsExp;
+                p3.textContent = "Email: " + guides[i].emailAddress;
+                img.setAttribute('src', 'images/' + guides[i].photo);
+                img.setAttribute('alt', guides[i].name);
 
                 div.appendChild(h2);
                 div.appendChild(h3);
@@ -44,6 +42,5 @@ fetch(requestURL)
                 card.appendChild(img);
 
                 document.querySelector('div.cards').appendChild(card);
-            }
         }
     });

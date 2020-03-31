@@ -200,3 +200,25 @@ footer {
     display: table;
     clear: both;
 }
+/*----------- River Guides --------------*/
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+    justify-content: center;
+    align-content: center;
+    grid-column-gap: 5px;
+    box-shadow: 0 0 30px #111;
+    margin: 30px;
+    padding: 10px;
+    border:10px solid $secondColor;
+}
+section.hover {
+    text-align: center;
+    padding: 1rem;
+    background-color: $thirdColor;
+    margin: 1rem;
+}
+.hover h2 {
+    color: $primaryColor;
+}

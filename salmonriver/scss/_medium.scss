@@ -100,4 +100,8 @@ footer {
         grid-area: 1 / 1;
     }
 }
-
+/*----------- Guides --------------*/
+div.cards section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
