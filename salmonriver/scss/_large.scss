@@ -48,3 +48,9 @@ main {
 .information {
     margin: 0;
 }
+/*----------- Guides --------------*/
+div.cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1rem;
+}
