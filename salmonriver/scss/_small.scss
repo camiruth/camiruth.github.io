@@ -221,4 +221,12 @@ section.hover {
 }
 .hover h2 {
     color: $primaryColor;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid $primaryColor;
 }
+.hover h3 {
+    font-size: 15px;
+    padding: 10px;
+}
+
