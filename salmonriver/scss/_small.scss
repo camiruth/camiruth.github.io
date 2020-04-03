@@ -249,7 +249,7 @@ form label.top, form div {
     font-size: .8rem;
 }
 textarea {
-    width: 100%;
+    width: 90%;
     height: 90%;
     color: $primaryColor;
     font-size: .75rem;
@@ -275,7 +275,7 @@ form input.submitBtn {
     border: 1px solid $primaryColor;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
-    margin: 0 0 2rem 2rem;
+    margin: .75rem;
     width: 96%;
     max-width: 20rem;
     justify-content: center;
@@ -292,13 +292,19 @@ form label.top input:required:valid {
     margin: 2rem;
     padding: 1rem;
 }
+iframe {
+    width: 100%;
+    padding: 1em;
+}
+
 /*----------- Reservations --------------*/
 table {
     background-color: $secondColor;
-    width: 96%;
     border: 5px solid $thirdColor;
-    padding: 1rem;
-    margin: 1rem;
+    box-shadow: 10px 10px 15px #628ca6;
+    justify-content: center;
+    text-align: center;
+    
 }
 th, td {
     border: 2px solid $secondColor;
@@ -307,7 +313,7 @@ th, td {
     justify-content: center;
     font-family: $fontFamily;
     color: $primaryColor;
-    font-size: 20px;
+    font-size: .5em;
     padding: 1rem;
     
 }
