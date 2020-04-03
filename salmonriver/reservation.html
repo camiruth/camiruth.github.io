@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="White river rafting in Riggins, ID. ">
+    <meta name="author" content="Camilla Johanson">
+    <link rel="shortcut icon" href="images/rafticon.png">
+
+    <title>Salmon River Adventures</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+    <!-- STYLE SHEETS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header class="clearfix">
+        <div class="headerlogo">
+            <img src="images/rafticon.png" alt="logo">
+            <h1>Salmon River Adventures</h1>
+            <h2>Never let Adventure Cease</h2>
+        </div>
+    </header>
+
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shortrafting.html">Short Rafting</a></li>
+            <li><a href="alldayrafting.html">All Day Rafting</a></li>
+            <li><a href="raftandhike.html">Raft & Hike</a></li>
+            <li><a href="riverguide.html">River Guides</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li class="active"><a href="reservation.html">Reservations</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- CONTENT HERE -->
+    <main>
+        <br>
+        <h2><span class="box">Reservations</span></h2>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4">Salmon River Rafting Adventures</th>
+                </tr>
+                <tr>
+                    <th class="blank"></th>
+                    <th>3 Hour Experience</th>
+                    <th>All Day Experience</th>
+                    <th>Raft and Hike</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Length</th>
+                    <td>3 Hours</td>
+                    <td>9 hours</td>
+                    <td>9 hours</td>
+                </tr>
+                <tr>
+                    <th>Skill Level</th>
+                    <td>No Experience Necessary</td>
+                    <td>Beginner to Intermediate</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <th>Cost</th>
+                    <td>$45 per person</td>
+                    <td>$105 per person</td>
+                    <td>$95 per person</td>
+                </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>
+
+        </table>
+        <br>
+        <h2><span class="box">Register Now To Save Your Spot</span></h2>
+        <form class="nogrid" method="get" action="reserve.html">
+            <fieldset>
+                <legend>Your Information</legend>
+                <label class="top">Full Name* <input type="text" name="fullname" pattern="(.*[A-Za-z]){5,}"
+                        required></label>
+                <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Adventure Selection</legend>
+                <label class="sbs"><input type="radio" name="audience" value="Yes"> 3 Hour Adventure</label>
+                <label class="sbs"><input type="radio" name="audience" value="Maybe"> All Day Adventure</label>
+                <label class="sbs"><input type="radio" name="audience" value="No"> Raft & Hike Adventure</label>
+                <label class="top">Start Date:<input type="date" name="startdate"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Infomation or Comments</legend>
+                <label class="comments"><textarea name="comments"
+                        placeholder="Enter Comments Here..."></textarea></label>
+            </fieldset>
+            <input type="submit" value="Register Now" class="submitBtn">
+        </form>
+        <h2><span class="box">Contact Us</span></h2>
+        <div class="contactus">
+            <div class="address">
+                <h3>Address:</h3>
+                <p>Salmon River Adventures</p>
+                <p>1000 S. Main Street</p>
+                <p>Riggins, ID 83549</p>
+            </div>
+            <div class="phone">
+                <h3>Phone:</h3>
+                <p>(555) 555-5555</p>
+                <h3>Email:</h3>
+                <p>contactus@salmonriveradventures.com</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER HERE -->
+    <footer>
+        <div class="topline"> Contact us: 555-555-5555 | contactus@salmonriveradventures.com | Map
+        </div>
+        <div class="bottomline">
+            &copy; 2020 | Camilla R. Johanson |<a class="toplinelink" href="https://www.byui.edu/online"> Terms of Use
+            </a> | <span id="currentyear"></span>
+        </div>
+    </footer>
+    <script src="js/nav.js"></script>
+    <script src="js/rigginsweather.js"></script>
+    <script src="js/guidesinfo.js"></script>
+    <script src="js/indexinfo.js"></script>
+</body>
+
+</html>
